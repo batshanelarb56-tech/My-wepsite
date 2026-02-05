@@ -1,0 +1,363 @@
+* {
+    webkite-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4338ca;
+    --second-color: #ffffff;
+    /* background-footer #111827; */
+}
+
+body {
+
+    font-family: "poppins", sans-serif;
+    background: #92a4b53a;
+    height: 80hv;
+}
+
+.header {
+    /* display: flex;
+   align-items: center;
+   justify-content: space-between;
+   overflow: hidden; */
+    width: 100%;
+    padding: 0 30px;
+
+}
+
+
+.container-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.25rem;
+    color: #4438caba;
+    font-weight: 600;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+nav ul {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+nav ul a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(33, 32, 32);
+    font-size: 0.75rem;
+    transition: 0.5s;
+    
+}
+
+nav ul :hover {
+    margin-left: 2px;
+    font-size: 1.5rem;
+}
+
+/* لغاية هنا شغال لغاية الشاشة فى مقياس 500px */
+.btn-1 {
+    border-radius: 5px;
+    padding: 3px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-1:hover,
+.btntwo:hover {
+    background-color: #1a07ee;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.header .container-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+/* هتا مشكلة فى الصورة انها تيجى تحت خلى فى بالك اشتغل على ده */
+.container-two .btn-2 {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.container-two .btn-3 {
+    padding: 2px 7px;
+    color: rgba(0, 0, 0, 0.507);
+    cursor: pointer;
+
+}
+
+.logo-1 {
+    max-width: 300px;
+    max-height: 300px;
+    mix-blend-mode: multiply;
+}
+
+.sectionone {
+    background-color: var(--second-color);
+       
+}
+
+.courses {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.contentone {
+    display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+    grid-gap: 50px;
+    justify-items: center
+}
+
+.textone {
+    background-color: #d9d3d3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logotwo {
+    width: 90px;
+    mix-blend-mode: multiply
+}
+
+.textone p {
+    font-size: 13px;
+}
+
+.btntwo {
+    margin: auto;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 5px 30px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+.texttwo{
+   border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.logothree{
+     width: 60px;
+    mix-blend-mode: multiply
+}
+.about {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.contenttwo {
+    display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 50px;
+    justify-items: center
+}
+
+.texttwo p {
+    font-size: 13px;
+}
+.sectionthree {
+    background-color: var(--second-color);
+       
+}
+.contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.contentthree {
+       display: flex;
+    grid-gap: 30px;
+    justify-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.textthree {
+    background-color: #d9d3d3;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.logofour {
+    width: 90px;
+    height: 50px;
+    mix-blend-mode: multiply
+}
+.textthree p {
+    font-size: 13px;
+}
+.point{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+ .point span{
+       width: 10px;
+    height: 10px;
+    background-color: #00000047;
+    border-radius: 50%;
+    margin-left: 6px;;
+}
+.point span:nth-child(2){
+    background-color: black;
+}
+footer{background-color: #111827;
+margin-top: -35px;}
+footer .foot{
+    width: 85%;
+    MAX-width:1200PX ;
+}
+.footlinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px 0 20px;
+    gap: 50px;
+
+}
+.footlinks ul{
+    list-style: none;
+}
+.foot h3 { 
+    font-size: 24px ;
+    font-weight: bold;
+     margin-left: 5px;
+}
+#foot{
+    color: var(--primary-color);
+   
+} 
+   
+    
+    
+    
+
+.footlinks ul a{
+    color: black;
+    text-decoration: none;
+       margin-left: 20px; 
+}.FOOT-2{
+    text-align: center;
+ padding-bottom: 10px;
+ border-top: whitesmoke 1px solid;
+ max-width: 600px;
+}
+@media (max-width:600px) {
+
+    .container-one {
+           display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center
+
+    }
+    nav ul {
+                    display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: stretch
+        
+
+
+    }
+nav ul a  {
+    padding: 10px;
+    border: #ffffff solid 2px;
+    width: auto;
+    background-color: var(--primary-color);
+    transition: 0.3s;
+    color: white;
+     margin-left: 20px;
+      margin-right: 20px;
+margin-bottom: 3px;
+}
+
+
+.header .container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul :hover {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 1.5rem;
+}
+           nav{  display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;}
+        .btn-1 {
+    border-radius: 5px;
+    padding: 3px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    margin-left: calc( 100% + -425PX );
+}
+}
